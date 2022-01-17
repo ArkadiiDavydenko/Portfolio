@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
 <header class="header">
-    <div class="wrapper">
-        <div class="header__logo"></div>
+
+    <div class="header-wrapper">
+        <div class="header__logo">
+            <a href="#" class="link-icon">
+                <object type="image/svg+xml" data="./assets/svg/logo.svg" class="logo-object">
+                    Your browser does not support SVG
+                </object>
+            </a>
+        </div>
         <nav class="header__navigation">
             <ul class="navigation">
                 <li class="navigation__link"><a href="#skills">Skills</a></li>
@@ -19,21 +31,22 @@
                 <li class="navigation__link"><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
-        <div class="header__lang"></div>
+        <div class="header__lang">en / ru</div>
     </div>
+
 </header>
 <main class="main">
+    <section class="hero">
+        <div class="hero__context">
+            <h1 class="hero__title">Alexa Rise</h1>
+            <p class="hero__text">
+                Save sincere emotions, romantic feelings and happy moments of life
+                together with professional photographer Alexa Rise
+            </p>
+            <button class="button">Hire me</button>
+        </div>
+    </section>
     <div class="wrapper">
-        <section class="hero">
-            <div class="wrapper-section">
-                <h1 class="hero__title">Alexa Rise</h1>
-                <p class="hero__text">
-                    Save sincere emotions, romantic feelings and happy moments of life
-                    together with professional photographer Alexa Rise
-                </p>
-                <button class="button">Hire me</button>
-            </div>
-        </section>
         <section class="skills" id="skills">
             <div class="wrapper-section">
                 <h2 class="section-title">Skills</h2>
@@ -95,6 +108,18 @@
         <section class="contacts" id="contacts">
             <div class="wrapper-section">
                 <h2 class="section-title">Contact me</h2>
+                <div class="contact__form">
+                    <form>
+                        <div class="layout-2-column">
+                            <input type="email" name="email" placeholder="E-mail">
+                            <input type="tel" name="phone" placeholder="Phone">
+                        </div>
+                        <textarea name="form" placeholder="Message"></textarea>
+                        <div class="contact-us__button">
+                            <button type="submit" class="button">Send Message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </div>
@@ -102,11 +127,11 @@
 <footer class="footer">
     <div class="wrapper">
         <div class="footer-item">
-            <p class="created">&copy;   2022</p>
+            <p class="created">&copy; 2022</p>
             <p class="git-link">github</p>
         </div>
         <div class="footer-item">
-            <a href="#">Rolling Scopes School</a>
+            <a href="https://rs.school/js-stage0/ ">Rolling Scopes School</a>
         </div>
         <div class="footer-item contact-link">
             <div class="contact-link__icon">
@@ -140,5 +165,6 @@
         </div>
     </div>
 </footer>
+<script src="./index.js"></script>
 </body>
 </html>

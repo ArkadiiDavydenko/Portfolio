@@ -1,0 +1,140 @@
+:root {
+    box-sizing: border-box;
+    --bg-dark: #000000;
+    --gold: #BDAE82;
+    --white: #ffffff;
+    font-family: 'Inter', sans-serif;
+    /*font-family: 'Merriweather', serif;*/
+    color: var(--white);
+
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    /*padding: 0;*/
+    /*margin: 0;*/
+}
+
+.wrapper {
+    background-color: var(--bg-dark);
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 120px;
+    color: var(--white);
+    font-family: 'Merriweather', serif;
+}
+/*---------------------------header--------------------------------*/
+.header {
+    margin: 0 auto;
+    padding: 0;
+    width: 1440px;
+    height: 90px;
+}
+.header__logo {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+.header__navigation {
+    display: inline-block;
+    height: 50px;
+    width: 500px;
+    margin-left: 730px;
+}
+.navigation {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+.navigation__link > a {
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.header__lang {
+    height: 50px;
+    width: 70px;
+    margin: 20px;
+    font-size: 20px;
+    color: var(--white);
+    display: inline-block;
+}
+/*---------------------------main-------------------------------------*/
+
+/*-----section-hero-----*/
+.hero {
+    margin: -90px auto;
+    padding: 0 20px;
+    width: 1440px;
+    height: 910px;
+    background: url('./assets/img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.hero__context {
+    display: inline-block;
+    margin: 250px 860px 330px 80px;
+}
+
+.hero__text {
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--white);
+}
+
+/*-----section-skills-----*/
+
+.skills {
+    height: 482px;
+}
+
+/*-----section-portfolio-----*/
+.portfolio {
+    height: 1500px;
+}
+
+/*-----section-video-----*/
+
+.video {
+    height: 945px;
+}
+
+/*-----section-price-----*/
+
+.price {
+    height: 845px;
+}
+
+/*-----contacts-----*/
+
+.contacts {
+    height: 700px;
+}
+
+/*---------------------------footer-------------------------------------*/
+.footer {
+    height: 150px;
+}
+
+.footer-item {
+    display: inline-block;
+}
+
+.contact-link__icon {
+    display: inline-block;
+}
+
