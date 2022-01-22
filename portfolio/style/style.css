@@ -80,7 +80,7 @@ h1 {
     padding: 0 20px;
     width: 1440px;
     height: 910px;
-    background: url('./assets/img/header-bg.jpg');
+    background: url('../assets/img/header-bg.jpg');
     background-repeat: no-repeat;
     background-position: center 0;
 }
