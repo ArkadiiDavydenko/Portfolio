@@ -43,6 +43,7 @@ h1 {
     line-height: 120px;
     color: var(--white);
     font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
 }
 
 /*---------------------------header--------------------------------*/
@@ -126,10 +127,13 @@ h1 {
 
 .hero-context {
     display: inline-block;
-    margin: 250px 860px 330px 80px;
+    padding-right: 30px;
+    margin: 211px 860px 330px 80px;
 }
 
 .hero-context__text {
+    margin: 0;
+    font-family: var(--font-inter);
     font-size: 20px;
     line-height: 40px;
     color: var(--white);
