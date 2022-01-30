@@ -73,6 +73,14 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
 }
+h3 {
+    font-size: 28px;
+    line-height: 56px;
+    color: var(--white);
+    font-family: var(--font-merriweather);
+    padding: 43px 0 20px;
+
+}
 h4 {
     font-size: 20px;
     line-height: 40px;
@@ -225,7 +233,6 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
 }
 .portfolio__img {
     width: 450px;
@@ -255,7 +262,34 @@ h4 {
 .price {
     height: 845px;
 }
-
+.order-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 60px;
+    width: 450px;
+    height: 505px;
+    border-color: var(--main-gold);
+    border-style: solid;
+    border-width: 2px;
+}
+.order-block__cost {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    color: var(--main-gold);
+}
+.order-block__description {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 36px;
+    color: var(--white);
+    padding-top: 15px;
+}
+.order-block__button {
+    padding-bottom: 43px;
+    padding-left: 5px;
+}
 /*-----contacts-----*/
 
 .contacts {
