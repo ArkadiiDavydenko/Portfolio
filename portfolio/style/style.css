@@ -7,9 +7,16 @@
     --font-merriweather: 'Merriweather', serif;
     scroll-behavior: smooth;
 }
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
 
 body {
-    /*background-color: var(--bg-dark);*/
+    background-color: var(--main-dark);
 }
 
 .button {
@@ -35,7 +42,7 @@ body {
 .container {
     width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    /*padding: 0 20px;*/
 }
 
 h1 {
@@ -44,6 +51,40 @@ h1 {
     color: var(--white);
     font-family: 'Merriweather', serif;
     margin-bottom: 10px;
+}
+
+h2 {
+    box-sizing: border-box;
+    width: 150px;
+    font-size: 40px;
+    line-height: 80px;
+    font-family: var(--font-merriweather);
+    color: var(--main-gold);
+    background-color: var(--main-dark);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--white);
+    font-family: var(--font-inter);
+    margin-bottom: 10px;
+}
+
+.section {
+    padding: 100px 20px 0;
+}
+
+
+.section-title {
+    width: 50%;
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin: 0 auto;
 }
 
 /*---------------------------header--------------------------------*/
@@ -55,6 +96,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-right: 20px;
 }
 
 .header__logo {
@@ -70,7 +112,7 @@ h1 {
     align-items: center;
     margin-left: auto;
     height: 90px;
-    padding: 5px 0;
+    padding: 20px;
 }
 
 .nav-list {
@@ -88,7 +130,7 @@ h1 {
 
 .nav-link {
     font-size: 20px;
-    padding: 0 14px;
+    padding: 0 15px;
     line-height: 50px;
     color: var(--white);
     text-decoration: none;
@@ -102,7 +144,6 @@ h1 {
     text-align: center;
     height: 90px;
     width: 70px;
-    padding:0 20px;
     font-size: 20px;
     color: var(--white);
     font-family: var(--font-inter);
@@ -117,18 +158,20 @@ h1 {
 
 /*-----section-hero-----*/
 .hero {
-    margin: -90px auto;
+    margin: -90px auto 0;
     width: 1440px;
     height: 910px;
     background: url('../assets/img/header-bg.jpg');
     background-repeat: no-repeat;
     background-position: center 0;
 }
+.section-hero {
+    padding:211px 870px 330px 80px ;
+}
+
 
 .hero-context {
     display: inline-block;
-    padding-right: 30px;
-    margin: 211px 860px 330px 80px;
 }
 
 .hero-context__text {
@@ -143,7 +186,36 @@ h1 {
 
 .skills {
     height: 482px;
+    /*padding-top: 100px;*/
 }
+
+.layout-4-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 280px;
+    height: 240px;
+    padding-top: 60px;
+}
+.skill__title {
+    padding-top: 45px;
+}
+.skill__text {
+    color: var(--white);
+    font-size: 18px;
+    font-family: var(--font-inter);
+    line-height: 36px;
+    padding-top: 10px;
+}
+
 
 /*-----section-portfolio-----*/
 .portfolio {
