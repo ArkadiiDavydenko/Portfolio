@@ -18,22 +18,33 @@
 body {
     background-color: var(--main-dark);
 }
-
+/*-------buttons-----------*/
 .button {
-    background-color: var(--main-gold);
     font-family: var(--font-inter);
     height: 55px;
     width: 220px;
     font-size: 20px;
     margin-top: 25px;
-    color: var(--main-dark);
     border-style: solid;
-    border-color: var(--main-gold);
     border-width: 2px;
     margin-right: 5px;
 }
-
-.button:hover {
+.button-white {
+    background-color: var(--main-gold);
+    color: var(--main-dark);
+    border-color: var(--main-gold);
+}
+.button-dark {
+    background-color: var(--main-dark);
+    color: var(--main-gold);
+    border-color: var(--main-gold);
+}
+.button-white:hover {
+    transition: 0.3s;
+    color: var(--white);
+    border-color: var(--main-gold);
+}
+.button-dark:hover {
     transition: 0.3s;
     color: var(--white);
     border-color: var(--main-gold);
@@ -52,10 +63,8 @@ h1 {
     font-family: 'Merriweather', serif;
     margin-bottom: 10px;
 }
-
 h2 {
     box-sizing: border-box;
-    width: 150px;
     font-size: 40px;
     line-height: 80px;
     font-family: var(--font-merriweather);
@@ -64,7 +73,6 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
 }
-
 h4 {
     font-size: 20px;
     line-height: 40px;
@@ -76,8 +84,6 @@ h4 {
 .section {
     padding: 100px 20px 0;
 }
-
-
 .section-title {
     width: 50%;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
@@ -106,7 +112,6 @@ h4 {
     width: 50px;
     padding: 25px 20px 20px 20px;
 }
-
 .nav {
     /*display: inline-block;*/
     align-items: center;
@@ -114,7 +119,6 @@ h4 {
     height: 90px;
     padding: 20px;
 }
-
 .nav-list {
     margin-left: auto;
     display: flex;
@@ -123,11 +127,9 @@ h4 {
     align-items: center;
     list-style: none;
 }
-
 .nav-item {
     height: 50px;
 }
-
 .nav-link {
     font-size: 20px;
     padding: 0 15px;
@@ -136,7 +138,6 @@ h4 {
     text-decoration: none;
     font-family: var(--font-inter);
 }
-
 .header__lang {
     display: flex;
     align-items: center;
@@ -148,7 +149,6 @@ h4 {
     color: var(--white);
     font-family: var(--font-inter);
 }
-
 .en {
     color: var(--main-gold);
 }
@@ -168,12 +168,9 @@ h4 {
 .section-hero {
     padding:211px 870px 330px 80px ;
 }
-
-
 .hero-context {
     display: inline-block;
 }
-
 .hero-context__text {
     margin: 0;
     font-family: var(--font-inter);
@@ -181,14 +178,11 @@ h4 {
     line-height: 40px;
     color: var(--white);
 }
-
 /*-----section-skills-----*/
-
 .skills {
     height: 482px;
     /*padding-top: 100px;*/
 }
-
 .layout-4-column {
     display: flex;
     flex-direction: row;
@@ -216,10 +210,20 @@ h4 {
     padding-top: 10px;
 }
 
-
 /*-----section-portfolio-----*/
 .portfolio {
     height: 1500px;
+}
+.portfoli__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.layout-3-column {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*-----section-video-----*/
