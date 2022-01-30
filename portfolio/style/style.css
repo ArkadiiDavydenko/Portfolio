@@ -362,12 +362,46 @@ input:-webkit-autofill:active {
 .footer {
     height: 150px;
 }
-
+.footer-container {
+    padding: 0 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
 .footer-item {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 50px 0;
+    text-align: center;
+}
+.footer-item > a {
+    text-decoration: none;
+    color: var(--white);
+}
+.created {
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    display: inline-block;
+}
+.git-link {
+    padding: 0 25px;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
     display: inline-block;
 }
 
-.contact-link__icon {
-    display: inline-block;
+.contact-link {
+    width: 188px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact-rs {
+    width: 211px;
 }
 
