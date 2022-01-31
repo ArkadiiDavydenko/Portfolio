@@ -51,7 +51,7 @@ body {
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     /*padding: 0 20px;*/
 }
@@ -167,8 +167,8 @@ h4 {
 /*-----section-hero-----*/
 .hero {
     margin: -90px auto 0;
-    width: 1440px;
-    height: 910px;
+    max-width: 1440px;
+    max-height: 910px;
     background: url('../assets/img/header-bg.jpg');
     background-repeat: no-repeat;
     background-position: center 0;
@@ -188,7 +188,7 @@ h4 {
 }
 /*-----section-skills-----*/
 .skills {
-    height: 482px;
+    /*height: 482px;*/
     /*padding-top: 100px;*/
 }
 .layout-4-column {
@@ -204,8 +204,9 @@ h4 {
     justify-content: space-between;
     text-align: center;
     width: 280px;
-    height: 240px;
+    /*height: 240px;*/
     padding-top: 60px;
+    padding-bottom: 10px;
 }
 .skill__title {
     padding-top: 45px;
@@ -220,7 +221,7 @@ h4 {
 
 /*-----section-portfolio-----*/
 .portfolio {
-    height: 1500px;
+    /*height: 1500px;*/
 }
 .portfolio__buttons {
     display: flex;
@@ -234,6 +235,12 @@ h4 {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.portfolio__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
 .portfolio__img {
     width: 450px;
     height: 585px;
@@ -243,7 +250,10 @@ h4 {
 /*-----section-video-----*/
 
 .video {
-    height: 945px;
+    /*height: 945px;*/
+}
+.video-section{
+    padding-top: 80px;
 }
 .video-item {
     padding-top: 60px;
@@ -252,7 +262,7 @@ h4 {
     background-image: url("../assets/img/video-player.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
-    height: 705px;
+    max-height: 705px;
 }
 .video-img__play {
     padding: 288px 635px;
@@ -260,7 +270,8 @@ h4 {
 /*-----section-price-----*/
 
 .price {
-    height: 845px;
+    /*height: 845px;*/
+    /*margin-bottom: 100px;*/
 }
 .order-block {
     display: flex;
@@ -292,13 +303,15 @@ h4 {
 }
 /*---------------------contacts-----*/
 .section-contacts {
-    padding: 60px 25px 0 0;
-}
-.contacts {
+    padding: 55px 25px;
     height: 700px;
     background-image: url("../assets/img/contacts.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
+}
+.contacts {
+    padding-top: 100px;
+
 }
 .contact {
     float: right;
@@ -313,7 +326,6 @@ h4 {
 
 }
 .contact__form {
-    /*height: 290px;*/
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -360,7 +372,7 @@ input:-webkit-autofill:active {
 }
 /*---------------------------footer-------------------------------------*/
 .footer {
-    height: 150px;
+    /*height: 150px;*/
 }
 .footer-container {
     padding: 0 20px;
