@@ -163,6 +163,11 @@ h4 {
 
 
 /*---------------------------main-------------------------------------*/
+.video-container {
+    padding: 5% 1.5em 2em;
+    text-align: center;
+}
+
 /*---------------player-------------------------------------------*/
 .player-wrapper {
     max-width: 1400px;
@@ -200,7 +205,7 @@ h4 {
     display: flex;
     height: 12px;
     border: solid 2px var(--main-gold);
-    background-color: var(--main-light);
+    background-color: var(--white);
 }
 
 .progress__line {
@@ -212,8 +217,8 @@ h4 {
 
 .video-time {
     flex: auto;
-    color: var(--main-light);
-    font-family: var(--font-roboto);
+    color: var(--white);
+    font-family: var(--font-inter);
 }
 
 /*.slider {*/
@@ -245,7 +250,7 @@ h4 {
     height: 30px;
     width: 8px;
     border-radius: 2px;
-    background: var(--main-light);
+    background: var(--white);
     cursor: pointer;
     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
@@ -303,156 +308,6 @@ h4 {
     background-repeat: no-repeat;
     background-color: transparent;
 }
-/*---------------player-------------------------------------------*/
-.player-wrapper {
-    max-width: 1400px;
-    padding-top: 2em;
-}
-
-.player {
-    background-image: url("../assets/img/video-player.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    position: relative;
-    z-index: 20;
-    border: solid 2px;
-    border-color: var(--main-gold);
-}
-
-.player__video {
-    width: 100%;
-    position: relative;
-    z-index: 10;
-    margin-bottom: -0.2em;
-}
-
-.player__controls {
-    position: absolute;
-    top: 70%;
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.2em 0.5em 0.3em;
-}
-
-.progress {
-    flex: 10;
-    position: relative;
-    display: flex;
-    height: 12px;
-    border: solid 2px var(--main-gold);
-    background-color: var(--main-light);
-}
-
-.progress__line {
-    width: 50%;
-    background: var(--main-gold);
-    flex: 0;
-    flex-basis: 0%;
-}
-
-.video-time {
-    flex: auto;
-    color: var(--main-light);
-    font-family: var(--font-roboto);
-}
-
-/*.slider {*/
-/*    position: absolute;*/
-/*    left: 0%;*/
-/*    top: -10px;*/
-/*    display: inline-block;*/
-/*    text-align: right;*/
-/*    border: 1px solid #000000;*/
-/*    height: 30px;*/
-/*    width: 8px;*/
-/*    border-radius: 2px;*/
-/*    background: var(--main-light);*/
-/*    cursor: pointer;*/
-/*    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
-/*}*/
-.player__slider {
-    flex: 1.5;
-    height: 12px;
-    width: calc(0.5em + 10px);
-    background: linear-gradient(to right, var(--main-gold) 0%, var(--main-gold) 40%, #fff 40%, #fff 100%);
-    border: solid 2px var(--main-gold);
-    -webkit-appearance: none;
-}
-
-.player__slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: 1px solid #000000;
-    height: 30px;
-    width: 8px;
-    border-radius: 2px;
-    background: var(--main-light);
-    cursor: pointer;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-
-.change_color:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-    transition: all 0.2s;
-}
-
-/*---------------buttons--------------------------*/
-.main-button {
-    z-index: 99;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -65px;
-    margin-top: -65px;
-    width: 130px;
-    height: 130px;
-    background-image: url("../assets/svg/play-btn.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.player__button {
-    padding: 0.3em;
-    flex: 1;
-    border: 0;
-    background-color: var(--main-dark);
-    background-position: center;
-    height: 32px;
-    width: 32px;
-    cursor: pointer;
-}
-
-.toggle-video {
-    background-image: url("../assets/svg/play.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-}
-
-.toggle-volume {
-    background-image: url("../assets/svg/volume.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-}
-
-.player-fullscreen {
-    background-image: url("../assets/svg/fullscreen.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-}
-
-
-
-
-
 
 
 /*-----section-hero-----*/
