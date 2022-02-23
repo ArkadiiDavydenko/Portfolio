@@ -1,12 +1,23 @@
 //-------burger menu-------------------------------------------------------
 const hamburger = document.querySelector('.hamburger');
+const openMenu = document.querySelector('.menu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+
+function closeMenu() {
+    if (openMenu.classList.contains('menu-open')) {
+        openMenu.classList.remove('menu-open');
+        hamburger.classList.remove('open');
+    }
+}
 
 function toggleMenu() {
     hamburger.classList.toggle('open');
+    openMenu.classList.toggle('menu-open');
 }
+
 hamburger.addEventListener('click', toggleMenu);
-
-
+navLinks.forEach((el) => el.addEventListener('click', closeMenu));
 
 
 //-------change seasons------------------------------------------------
@@ -62,7 +73,7 @@ function preloadImages() {
 preloadImages();
 
 
-console.log ("Смена изображений в секции portfolio +25\n "
+console.log("Смена изображений в секции portfolio +25\n "
 )
 
 
