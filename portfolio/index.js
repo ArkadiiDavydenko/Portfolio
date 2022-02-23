@@ -1,3 +1,15 @@
+//-------burger menu-------------------------------------------------------
+const hamburger = document.querySelector('.hamburger');
+
+function toggleMenu() {
+    hamburger.classList.toggle('open');
+}
+hamburger.addEventListener('click', toggleMenu);
+
+
+
+
+//-------change seasons------------------------------------------------
 const portfolioBtn = document.querySelectorAll('.portfolio-btn');
 const portfolioImages = document.querySelectorAll('.portfolio__img');
 const portfolioAllBtns = document.querySelector('.portfolio__buttons');

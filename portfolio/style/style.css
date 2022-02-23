@@ -7,6 +7,7 @@
     --font-merriweather: 'Merriweather', serif;
     scroll-behavior: smooth;
 }
+
 *,
 ::before,
 ::after {
@@ -18,6 +19,7 @@
 body {
     background-color: var(--main-dark);
 }
+
 /*-------buttons-----------*/
 .button {
     font-family: var(--font-inter);
@@ -28,22 +30,27 @@ body {
     border-style: solid;
     border-width: 2px;
     margin-right: 5px;
+    cursor: pointer;
 }
+
 .button_white {
     background-color: var(--main-gold);
     color: var(--main-dark);
     border-color: var(--main-gold);
 }
+
 .button_dark {
     background-color: var(--main-dark);
     color: var(--main-gold);
     border-color: var(--main-gold);
 }
+
 .button_white:hover {
     transition: 0.3s;
     color: var(--white);
     border-color: var(--main-gold);
 }
+
 .button_dark:hover {
     transition: 0.3s;
     color: var(--white);
@@ -63,6 +70,7 @@ h1 {
     font-family: 'Merriweather', serif;
     margin-bottom: 10px;
 }
+
 h2 {
     box-sizing: border-box;
     font-size: 40px;
@@ -73,6 +81,7 @@ h2 {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 h3 {
     font-size: 28px;
     line-height: 56px;
@@ -81,6 +90,7 @@ h3 {
     padding: 43px 0 20px;
 
 }
+
 h4 {
     font-size: 20px;
     line-height: 40px;
@@ -92,6 +102,7 @@ h4 {
 .section {
     padding: 100px 20px 0;
 }
+
 .section-title {
     width: 50%;
     background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
@@ -110,16 +121,16 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 20px;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .header__logo {
-    /*display: inline-block;*/
     align-items: center;
     height: 50px;
     width: 50px;
-    padding: 25px 20px 20px 20px;
 }
+
 .nav {
     /*display: inline-block;*/
     align-items: center;
@@ -127,6 +138,7 @@ h4 {
     height: 90px;
     padding: 20px;
 }
+
 .nav-list {
     margin-left: auto;
     display: flex;
@@ -135,9 +147,11 @@ h4 {
     align-items: center;
     list-style: none;
 }
+
 .nav-item {
     height: 50px;
 }
+
 .nav-link {
     font-size: 20px;
     padding: 0 15px;
@@ -146,25 +160,64 @@ h4 {
     text-decoration: none;
     font-family: var(--font-inter);
 }
+
 .header__lang {
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    padding: 0 5px;
     height: 90px;
     width: 70px;
     font-size: 20px;
     color: var(--white);
     font-family: var(--font-inter);
 }
+
 .en {
     color: var(--main-gold);
+}
+
+/*---------------------------hamburger-------------------------------------*/
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 3px;
+    width: 56px;
+    height: 50px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
+
+.line {
+    width: 80%;
+    height: 3px;
+    background: var(--white);
+    margin: 3px 0;
+    z-index: 15;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.open .line1 {
+    transform: rotate(-45deg) translate(-7px, 10px);
+}
+
+.hamburger.open .line2 {
+    opacity: 0;
+}
+
+.hamburger.open .line3 {
+    transform: rotate(45deg) translate(-7px, -10px);
 }
 
 
 /*---------------------------main-------------------------------------*/
 .video-container {
-    padding: 5% 1.5em 2em;
+    padding: 5% 0 2em;
     text-align: center;
 }
 
@@ -319,12 +372,17 @@ h4 {
     background-repeat: no-repeat;
     background-position: center 0;
 }
+
 .section-hero {
-    padding:211px 870px 330px 80px ;
+    padding: 211px 0 330px 80px;
 }
+
 .hero-context {
+    max-width: 480px;
+    /*height: 330px;*/
     display: inline-block;
 }
+
 .hero-context__text {
     margin: 0;
     font-family: var(--font-inter);
@@ -332,18 +390,20 @@ h4 {
     line-height: 40px;
     color: var(--white);
 }
+
 /*-----section-skills-----*/
 .skills {
     /*height: 482px;*/
     /*padding-top: 100px;*/
 }
+
 .layout-4-column {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 20px;
+    justify-content: space-around;
 }
+
 .skill {
     display: flex;
     flex-direction: column;
@@ -354,9 +414,11 @@ h4 {
     padding-top: 60px;
     padding-bottom: 10px;
 }
+
 .skill__title {
     padding-top: 45px;
 }
+
 .skill__text {
     color: var(--white);
     font-size: 18px;
@@ -369,24 +431,22 @@ h4 {
 .portfolio {
     /*height: 1500px;*/
 }
-.portfolio__buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 35px 0 60px;
-}
+
 
 .layout-3-column {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0 -20px;
 }
+
 .portfolio__buttons {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 35px 0 60px;
 }
+
 .portfolio__img {
     width: 450px;
     height: 585px;
@@ -398,27 +458,33 @@ h4 {
 .video {
     /*height: 945px;*/
 }
-.video-section{
+
+.video-section {
     padding-top: 80px;
 }
+
 .video-item {
     padding-top: 60px;
 }
+
 .video-img {
-    background-image: url("../assets/img/video-player.jpg");
+    /*background-image: url("../assets/img/video-player.jpg");*/
     background-repeat: no-repeat;
     background-position: center 0;
     max-height: 705px;
 }
+
 .video-img__play {
     padding: 288px 635px;
 }
+
 /*-----section-price-----*/
 
 .price {
     /*height: 845px;*/
     /*margin-bottom: 100px;*/
 }
+
 .order-block {
     display: flex;
     flex-direction: column;
@@ -431,11 +497,13 @@ h4 {
     border-style: solid;
     border-width: 2px;
 }
+
 .order-block__cost {
     font-family: 'Merriweather', serif;
     font-size: 24px;
     color: var(--main-gold);
 }
+
 .order-block__description {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
@@ -443,45 +511,54 @@ h4 {
     color: var(--white);
     padding-top: 15px;
 }
+
 .order-block__button {
     padding-bottom: 43px;
     padding-left: 5px;
 }
+
 /*---------------------contacts-----*/
 .section-contacts {
-    padding: 55px 25px;
+    padding: 55px 25px 200px;
+    text-align: right;
     height: 700px;
     background-image: url("../assets/img/contacts.jpg");
     background-repeat: no-repeat;
     background-position: center 0;
 }
+
 .contacts {
     padding-top: 100px;
 
 }
+
 .contact {
     float: right;
     width: 450px;
     padding-left: 5px;
-    /*display: inline-block;*/
+    display: inline-block;
     /*margin-left: auto;*/
 }
+
 .contact__title {
     padding-left: 0;
     background-color: initial;
 
 }
+
 .contact__form {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 ::placeholder {
     font-family: inherit;
     color: #bdae82;
     font-size: 20px;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -489,6 +566,7 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: #bdae82;
     transition: background-color 0s ease-in-out 9000s;
 }
+
 .cont-input {
     background-color: initial;
     font-family: 'Inter', sans-serif;
@@ -501,6 +579,7 @@ input:-webkit-autofill:active {
     border-width: 2px;
     border-color: var(--main-gold);
 }
+
 .cont-textarea {
     background-color: initial;
     font-family: 'Inter', sans-serif;
@@ -513,21 +592,26 @@ input:-webkit-autofill:active {
     border-width: 2px;
     border-color: var(--main-gold);
 }
+
 .contact-us__button {
     padding-top: 5px;
 }
+
 /*---------------------------footer-------------------------------------*/
 .footer {
     /*height: 150px;*/
 }
+
 .footer-container {
     padding: 0 20px;
-    height: 150px;
+    /*height: 150px;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    flex-wrap: wrap;
 }
+
 .footer-item {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
@@ -535,22 +619,26 @@ input:-webkit-autofill:active {
     padding: 50px 0;
     text-align: center;
 }
+
 .footer-item > a {
     text-decoration: none;
     color: var(--white);
 }
+
 .created {
     font-size: 19px;
     font-family: 'Inter', sans-serif;
     color: var(--white);
     display: inline-block;
 }
+
 .git-link {
     padding: 0 25px;
     font-size: 19px;
     font-family: 'Inter', sans-serif;
     color: var(--white);
     display: inline-block;
+    cursor: pointer;
 }
 
 .contact-link {
@@ -559,7 +647,14 @@ input:-webkit-autofill:active {
     flex-direction: row;
     justify-content: space-between;
 }
+
 .contact-rs {
     width: 211px;
 }
+
+@media (max-width: 768px) {
+
+}
+
+
 
