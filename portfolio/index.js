@@ -1,3 +1,22 @@
+import i18Obj from './translate.js';
+//------------change lang-------------------------------------------
+const enLang = document.querySelector('.en');
+const ruLang = document.querySelector('.ru');
+const langList = document.querySelectorAll('[data-i18]')
+
+function getTranslate(event) {
+    langList.forEach(function (item){
+        let lang = i18Obj[event.target.className];
+        item.innerHTML = lang[item.dataset.i18]
+    })
+}
+
+enLang.addEventListener('click', (event) => {
+    getTranslate(event)
+});
+ruLang.addEventListener('click', (event) => {
+    getTranslate(event)
+});
 //-------burger menu-------------------------------------------------------
 const hamburger = document.querySelector('.hamburger');
 const openMenu = document.querySelector('.menu');
