@@ -6,9 +6,11 @@ const langList = document.querySelectorAll('[data-i18]')
 
 function getTranslate(event) {
     langList.forEach(function (item){
-        let lang = i18Obj[event.target.className];
+        let lang = i18Obj[event.target.className.slice(0, 2)];
         item.innerHTML = lang[item.dataset.i18]
     })
+    enLang.classList.toggle('checked');
+    ruLang.classList.toggle('checked');
 }
 
 enLang.addEventListener('click', (event) => {
@@ -90,11 +92,6 @@ function preloadImages() {
 }
 
 preloadImages();
-
-
-console.log("Смена изображений в секции portfolio +25\n "
-)
-
 
 const player = document.querySelector('.player');
 

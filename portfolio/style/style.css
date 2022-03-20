@@ -176,8 +176,11 @@ h4 {
     font-family: var(--font-inter);
 }
 
-.en {
+.checked {
     color: var(--main-gold);
+}
+.en, .ru {
+    cursor: pointer;
 }
 
 /*---------------------------hamburger-------------------------------------*/
