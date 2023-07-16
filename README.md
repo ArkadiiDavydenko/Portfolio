@@ -1,2 +1,1 @@
-# arkadiidavydenko-JSFEPRESCHOOL
-Private repository for @arkadiidavydenko
+https://arkadiidavydenko.github.io/Portfolio/portfolio/
